@@ -1,9 +1,26 @@
+import Footer from "./components/Footer"
+import Header from "./components/header"
+import MenuItemCard from "./components/MenuItemCard"
+import VendorCard from "./components/VendorCard"
 
 function App() {
 
   return (
     <>
-    <h1>CampusEats</h1>
+      <Header /> 
+      <main className="container">
+        <section>
+          <h2 className="section-title">Today's Vendor</h2>
+          <VendorCard />
+        </section>
+        <section>
+          <h2 className="section-title"> Popular Items</h2>
+          <div className="grid">
+            <MenuItemCard />
+          </div>
+        </section>
+      </main>
+      <Footer />
     </>
   )
 }
