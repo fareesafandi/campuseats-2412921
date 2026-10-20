@@ -16,3 +16,4 @@ declaratively (React)?
 4. Name one benefit of splitting the UI into small components.
  
 - Small components increase the maintainability of the system and allow the division of work in collaborative environment.
+
