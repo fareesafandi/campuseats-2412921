@@ -1,0 +1,92 @@
+[
+  {
+    "id": "2412921-Hey-Dessert",
+    "name": "HeyDessert",
+    "location": "Section 13, Shah Alam",
+    "openHours": "9:00 am - 6:30 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "Hey-1",
+        "name": "Cheesekut",
+        "description": "A soft and cold dessert loaded with cheese with multiple flavours",
+        "price": 9,
+        "category": "Dessert",
+        "available": true
+      },
+      {
+        "id": "Hey-2",
+        "name": "Tiramisu",
+        "description": "A soft and creamy dessert with a light and delightful taste", 
+        "price": 9.90,
+        "category": "Dessert",
+        "available": true
+      },
+      {
+        "id": "Hey-3",
+        "name": "Dadih",
+        "description": "A cold and refreshing jelly with the option of Coconut and Caramel flavour",
+        "price": 3.5,
+        "category": "Dessert",
+        "available": false
+      },
+      {
+        "id": "Hey-4",
+        "name": "Sukiya Bowl",
+        "description": "Rice and Shabu Meat with a special Sukiya sauce",
+        "price": 15,
+        "category": "Daily Food",
+        "available": true 
+      },
+      {
+        "id": "Hey-5",
+        "name": "Potato Loaded",
+        "description": "A melted cheese filled mashed potato with fried chicken",
+        "price": 7.5,
+        "category": "Daily Food",
+        "available": true 
+      },
+      {
+        "id": "Hey-6",
+        "name": "Oriental Coffee",
+        "description": "A hot and refreshing oriental coffee",
+        "price": 5,
+        "category": "Beverage",
+        "available": false 
+      },
+      {
+        "id": "Hey-7",
+        "name": "Mineral Water (200ml)",
+        "description": "Cold or ambient dehydration",
+        "price": 2.20,
+        "category": "Beverage",
+        "available": true 
+      }
+    ]
+  },
+  {
+    "id": "kafe-aminah",
+    "name": "Kafe Mahallah Aminah",
+    "location": "Mahallah Aminah, Ground Floor",
+    "openHours": "8:00 am - 9:00 pm",
+    "isOpen": true,
+    "menu": [
+      {
+        "id": "ami-1",
+        "name": "Nasi Ayam Penyet",
+        "description": "Smashed fried chicken with sambal and rice",
+        "price": 9,
+        "category": "Rice",
+        "available": true
+      },
+      {
+        "id": "ami-2",
+        "name": "Air Bandung",
+        "description": "Rose syrup with milk",
+        "price": 3,
+        "category": "Drinks",
+        "available": true
+      }
+    ]
+  }
+]

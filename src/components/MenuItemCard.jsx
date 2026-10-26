@@ -1,4 +1,4 @@
-function MenuItemCard({ item }) {
+function MenuItemCard({ item, onAdd }) {
 
    return (
    <article className="card menu-card">
@@ -17,7 +17,6 @@ function MenuItemCard({ item }) {
          {item.available ? 'Add to cart' : 'Sold out'}
       </button>
 
-      <MenuItemCard key={item.id} item={item} onAdd={onAdd} />
    </article>
    )
   }
