@@ -8,7 +8,10 @@ function validate(values) {
     if (values.name.trim().length < 3) errors.name = 'Enter your name (at least 3 characters).'
 
     // TODO: mahallah must be chosen
+    if(values.mahallah == null) errors.mahallah = 'Mahallah must be chosen.'
+
     // TODO: pickupTime must be between '07:00' and '22:00' (strings compare fine)
+    if(values.pickupTime )
     return errors
 }
 
@@ -32,8 +35,8 @@ function CheckoutForm({ onPlaceOrder }) {
     return (
         <form className="card form" onSubmit={handleSubmit} noValidate>
             <h3>Checkout</h3>
-            <label htmlFor="name">Name</label>
 
+            <label htmlFor="name">Name</label>
             <input id="name" name="name" value={values.name} onChange={handleChange} />
             {errors.name && <p className="field-error">{errors.name}</p>}
 
@@ -44,9 +47,12 @@ function CheckoutForm({ onPlaceOrder }) {
                     MAHALLAHS.map((m) => <option key={m} value={m}>{m}</option>)
                 }
             </select>
+            {errors.mahallah && <p className='field-error'>{errors.mahallah}</p>}
+        
+            <label htmlFor="pickupTime">Pickup Time</label>
+            <input id="pickupTime" type="time" name='pickupTime' value={values.pickupTime} onChange={handleChange}/>
+            {errors.pickupTime && <p className='field-error'>{errors.pickupTime}</p>}
 
-            {/* TODO: show errors.mahallah */}
-            {/* TODO: label + <input type="time" name="pickupTime" ...> + its error */}
             <button type="submit" className="btn">Place order</button>
         </form>
     )

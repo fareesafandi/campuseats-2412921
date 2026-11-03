@@ -6,14 +6,21 @@ function CartPage({ cart, onChangeQty, onRemove, onPlaceOrder }) {
         return <p className="muted">Your cart is empty. Pick something from a menu first.</p>
     }
 
-    const total = cart.reduce(cart) // TODO: derive with cart.reduce(...), never store it in state
+    const total = cart.reduce((itemTotal, currentItem) => {
+       return itemTotal + (currentItem.price * currentItem.qty)  
+    }, 0) 
+    /*
+    - Starts with 0 
+    - Item total + price of item * quantity of item
+    - return the total price of the cart (in total)
+    */ 
 
     return (
         <div className="cart-layout">
             <div className="card">
                 <ul className="cart-list">
                     {
-                    cart.map((line) => (
+                    cart.map((line) => ( //fTODO: 'line' is not defined
                         <CartItem key={line.item.id} line={line} onChangeQty={onChangeQty} onRemove={onRemove} />
                     ))
                     }

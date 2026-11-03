@@ -1,5 +1,5 @@
 function CartItem({ line, onChangeQty, onRemove }) {
-    const { item, qty } = line
+    const { item, qty } = line //is item and qty defined?
 
     return (
         <li className="cart-line">
@@ -15,7 +15,7 @@ function CartItem({ line, onChangeQty, onRemove }) {
             </div>
             <p className="line-total">RM {(item.price*qty).toFixed(2)}</p>
 
-            <button type="button" className="link danger" onClick={() => onRemove(item)}>Remove</button>
+            <button type="button" className="link danger" onClick={() => onRemove(item.id)}>Remove</button>
         
         </li>
     )
